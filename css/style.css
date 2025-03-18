@@ -1178,6 +1178,7 @@ display:flex;
 	  position: absolute;
 	  top: 37px;
 	  inset-inline-end: 20px;
+	  font-size: 20px;
 	}
 	.line {
 	  background-color: var(--main-color);
@@ -1270,7 +1271,8 @@ display:flex;
 	}
   
 	.newsletter-note {
-	  font-size: 13px;
+		font-size: 13px;
+	  text-align: center;
 	}
 	.newsletter-input-div {
 	  
@@ -1409,4 +1411,15 @@ display:flex;
 	color: #fff;
   }
  
-
+  @media (min-width: 765px) and (max-width: 994px) {
+	.banners-content{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		gap:15px;
+	}
+	.features-content{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		gap:15px;
+	}
+  }
